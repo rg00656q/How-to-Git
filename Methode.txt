@@ -1,0 +1,17 @@
+#Méthode pour github
+
+1) Créer sa branche sur le site (via leur méthode/ vérifier que l'on se place en dev..)
+
+2) git clone "url github"
+
+3) git checkout "le nom de la branche où on veut se déplacer"
+
+**travail perso sur le(s) fichier(s)**
+
+4) git add * (ou git add <fichier>)
+
+5) git commit -m "mot du commit"
+
+#Si travail fini
+
+6) git push (on utilise son ID + mdp pour push)
