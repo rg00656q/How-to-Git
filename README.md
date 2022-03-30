@@ -6,12 +6,12 @@
 
 	git branch -M <branche>
 
-(creation de la branche de developpement)
+(Creation de la branche de developpement)
 
 
 	git remote add <branche de depart> https://github.com/rg00656q/How-to-Git.git
 
-(indication de l'adresse de codage)
+(Indication de l'adresse de codage)
 
 ### Utilisation particuliere :
 
@@ -22,19 +22,31 @@
 
 	git branch -m <branche> <renom>
 
-(renomme une branche en une autre)
+(Renomme une branche en une autre)
 
 
 	git fetch <branche de depart>
 
-(recupere les information de la branche sur github)
+(Recupere les information de la branche sur github)
 
 ### Utilisation des fonctions de tous les jours :
 
 	git checkout <branche_de_dev>
 
+(Change de branche pour celle ou on desire coder)
+
+	git pull
+
+(Recupere les infos sur github et met les locales a jour)
+
 	git add <fichier>
+
+(Ajoute un ou plusieurs fichiers a l'envoi)
 
 	git commit -m "message du commit"
 
+(Confirme les changements et sauvegarde la version du fichier)
+
 	git push -u <branche github> <notre branche>
+	
+(Envoi sur la branche \<notre branche\> de Github : ici on ecrira git push -u master dev)
