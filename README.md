@@ -1,7 +1,7 @@
 # README
 
 ```diff
--Initialisation de notre git :
+Initialisation de notre git :
 ```
 (On travaillera avec master et dev, donc ici branche serait dev et branche de depart serait master)
 
