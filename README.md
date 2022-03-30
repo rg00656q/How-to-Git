@@ -1,7 +1,14 @@
 # README
-<span style="color:green;font-weight:700;font-size:20px"> 
+
+<style>
+	red {color: red}
+	yellow {color: yellow}
+	green {color: green}
+</style>
+
+<red>
 Initialisation de notre git :
-</span>
+</red>
 
 (On travaillera avec master et dev, donc ici branche serait dev et branche de depart serait master)
 
@@ -14,9 +21,9 @@ Initialisation de notre git :
 
 (indication de l'adresse de codage)
 
-<span style="color:green;font-weight:700;font-size:20px"> 
+<red> 
 Utilisation particuliere :
-</span>
+</red>
 
 	git branch -d <branche>
 
@@ -32,9 +39,9 @@ Utilisation particuliere :
 
 (recupere les information de la branche sur github)
 
-<span style="color:green;font-weight:700;font-size:20px"> 
+<red> 
 Utilisation des fonctions de tous les jours :
-</span>
+</red>
 
 	git checkout <branche_de_dev>
 
