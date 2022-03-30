@@ -1,15 +1,21 @@
 # README
 
-git add README.md
+Initialisation de notre git :
 
-git commit -m "first commit"
+git branch -M <branche>
 
-git branch -M main
+git remote add <branche de depart> https://github.com/rg00656q/How-to-Git.git
+	(On travaillera avec master et dev, donc ici branche serait dev et branche de depart serait master)
 
-git remote add origin https://github.com/rg00656q/How-to-Git.git
+Utilisation particuliere :
 
-git push -u origin main
+git branch -d <branche>
+	(Pour supprimer une branche creee localement)
 
-(On remplacera les main avec master et on travaillera avec des dev)
+Utilisation des fonctions de tous les jours :
 
-(Oopsie avec les branches : git branch -d nom_de_la_branche pour supprimer localement)
+git add <fichier>
+
+git commit -m "message du commit"
+
+git push -u <branche github> <notre branche>
