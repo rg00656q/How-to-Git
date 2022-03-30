@@ -1,6 +1,6 @@
 # README
 
-#####Initialisation de notre git :
+##### Initialisation de notre git :
 
 (On travaillera avec master et dev, donc ici branche serait dev et branche de depart serait master)
 
@@ -13,7 +13,7 @@
 
 (indication de l'adresse de codage)
 
-#####Utilisation particuliere :
+##### Utilisation particuliere :
 
 	git branch -d <branche>
 
@@ -29,7 +29,7 @@
 
 (recupere les information de la branche sur github)
 
-#####Utilisation des fonctions de tous les jours :
+##### Utilisation des fonctions de tous les jours :
 
 	git checkout <branche_de_dev>
 
