@@ -1,0 +1,7 @@
+Ok so i made changes on main without going on dev FIRST (big oopsie dayum)
+
+here is how to update dev
+  while on dev do
+	git merge main
+  verify with ls to check if all files are here
+hf
