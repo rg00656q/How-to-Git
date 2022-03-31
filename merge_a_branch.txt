@@ -1,0 +1,19 @@
+Etapes :
+
+On se place dans la branche qu'on veut fusionner avec l'autre
+	git checkout master
+
+On la met a jour (au cas ou)
+	git pull origin master
+
+(on verifie)
+	git branch --merged
+
+(on fusionne la branche)
+	git merge dev
+
+(on met a jour)
+	git push origin master
+
+(Si tout se passe bien on aura dev ajoute)
+	git branch --merged

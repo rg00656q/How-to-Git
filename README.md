@@ -39,6 +39,11 @@ On travaillera avec master et dev, donc ici branche serait dev et branche de dep
 (Pour supprimer une branche creee localement)
 
 
+	git push origin --delete <branche>
+
+(Pour supprimer une branche creee sur le remote)
+
+
 	git branch -m <branche> <renom>
 
 (Renomme une branche en une autre)
