@@ -1,0 +1,16 @@
+Global flow of the system
+There are 3 parts in it
+	The project repository
+	The staging area / index
+	The git repository
+
+When we are done working on a file we add it to the staging area
+Once all is clear we use a commit to add it to the git repository
+If some of the changes should not be recorded, we can remove them
+Then save the changes as a part of the next commit
+
+ex : https://youtu.be/8JJ101D3knE?t=1104
+Once a commit is made, the staging area is not empty
+
+git add X
+	Can be used on a file that has been deleted
