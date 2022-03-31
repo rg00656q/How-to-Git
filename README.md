@@ -1,8 +1,24 @@
 # README
 
-### Initialisation de notre git :
+## Initialisation de notre git :
 
-(On travaillera avec master et dev, donc ici branche serait dev et branche de depart serait master)
+### Settings
+
+	git config --global user.name ""
+	git config --global user.email ""
+	git config --global core.editor "subl.exe --wait"
+
+(le --wait fera attendre git dans le terminal, tant que le fichier est ouvert)
+
+	git config --global -e
+
+(Ouvrira dans notre editeur -ici sublime text- le .gitconfig)
+
+	git config --global core.autocrlf X
+		X = true -> Windows
+		X = input -> Mac / Linux
+
+On travaillera avec master et dev, donc ici branche serait dev et branche de depart serait master
 
 	git branch -M <branche>
 
@@ -13,7 +29,7 @@
 
 (Indication de l'adresse de codage)
 
-### Utilisation particuliere :
+## Utilisation particuliere :
 
 	git branch -d <branche>
 
@@ -29,7 +45,11 @@
 
 (Recupere les information de la branche sur github)
 
-### Utilisation des fonctions de tous les jours :
+## Utilisation des fonctions de tous les jours :
+
+	git X -h
+
+(Retourne la page d'aide de la commande ciblee)
 
 	git checkout <branche_de_dev>
 
@@ -45,7 +65,7 @@
 
 	git commit -m "message du commit"
 
-(Confirme les changements et sauvegarde la version du fichier)
+(Retirer la partie -m ouvrira un editeur de texte pour faire un message plus long)
 
 	git push -u <branche github> <notre branche>
 	

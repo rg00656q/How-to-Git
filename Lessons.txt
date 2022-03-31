@@ -11,6 +11,131 @@ Then save the changes as a part of the next commit
 
 ex : https://youtu.be/8JJ101D3knE?t=1104
 Once a commit is made, the staging area is not empty
-
 git add X
 	Can be used on a file that has been deleted
+Each commit possess :
+	ID
+	Message
+	Date/time
+	Author
+	Complete snapshot of the project
+
+*********************************************************************
+
+Staging Files
+file1.txt & file2.txt
+	-> echo hello > file1.txt
+	-> git status
+	-> git add file1.txt file2.txt
+	-> git status
+	-> echo world >> file1.txt
+	-> git status
+
+*********************************************************************
+
+Commit
+	git commit
+	git commit -m "short message"
+
+*********************************************************************
+
+Skipping the staging area (not reccomended)
+	echo test >> file1.txt
+	git commit -am "short description"
+
+*********************************************************************
+
+Removing Files
+	rm file2.txt
+	ls
+		(It will not show with ls but...)
+	git ls-files
+		(Will show it)
+	git add file2.txt
+	git ls-files
+	git commit -m "removed file2"
+
+A short version is
+	git rm file2.txt
+
+*********************************************************************
+
+Moving / Renaming files
+We use mv to rename the file
+	mv file1.txt main.js
+	git add file1.txt
+	git add main.js
+	git status
+We can use
+	git mv main.js file1.js
+	git status
+
+*********************************************************************
+
+Ignoring Files
+	mkdir logs
+	echo hello > logs/dev.log
+	git status
+		(The new folder appears in untracked files)
+	echo logs/ > .gitignore
+	git status
+		(Will remove the logs/ from untracked, but we have to add it)
+	git add .gitignore
+	git commit -m "added ignored files"
+
+It only works if the files / directory is not already added in git
+	mkdir
+	echo hello > bin/app.bin
+	git status
+		(We see it)
+	git add .
+	git commit -m "oopsie"
+(Let's consider the file app.bin changes too much, we will have to commit it every time)
+(So we decide to add it to .gitignore)
+	subl.exe .gitignore
+		(in it we add the line bin/)
+	git add .gitignore
+	git commit -m "added bin/ to gitignore"
+(Now let's modify bin/)
+	echo helloworld > bin/app.bin
+	git status
+		(It will show that bin/app.bin is modified even though we added bin/ to gitignore)
+
+We will see that it is still in the staging area
+	git ls-files
+		(Will show it)
+
+We can't use
+	git rm
+Because it will remove in both the staging area AND your directory
+We want to remove it only for the staging area
+	git rm -h
+		(we see --cached		only remove from the index)
+	git rm --cached bin/
+		(will give an error, asking for a -r)
+		(-r allows recursive removal)
+	git --cached -r bin/
+	git ls-files
+	git status
+	git commit -m "We finally repaired our error"
+	echo test > bin/app.bin
+	git status
+
+*********************************************************************
+
+Short status
+	git status -s
+		(Will give a short description)
+
+For me
+	$ git status -s
+	MM Lessons.txt
+	M  README.md
+	A  file1.js
+	?? logs/
+I did not add logs/ to .gitignore , have a staged Lessons.txt as i am modifying it in my repository, and added file1.js
+
+*********************************************************************
+
+Unstaging a file
+	git restore --staged file1.js
