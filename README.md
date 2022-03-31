@@ -29,6 +29,9 @@ On travaillera avec master et dev, donc ici branche serait dev et branche de dep
 
 (Indication de l'adresse de codage)
 
+
+	git clone <url> <where to clone>
+
 ## Utilisation particuliere :
 
 	git branch -d <branche>
