@@ -1,14 +1,5 @@
-Apres la creation des branches correctement :
-	git branch -M dev
-	git remote add master https://github.com/rg00656q/How-to-Git.git
+Plus on utilise Git
+Plus on revise Git
+plus on comprends Git
 
-Faire les commandes de bases :
-	git add *
-	git commit -m "Message"
-	git pull master dev
-	git push master dev
-
-On devrait avoir deux branches sur le site
-	- master qui n'a rien (ou presque.. dans mon cas j'ai deja quelque chose mais il est pas a jour)
-	- dev qui a tous les derniers fichiers ajoutes et a jour
-
+	Patience
